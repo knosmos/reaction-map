@@ -15,12 +15,12 @@
     </head>
     <body>
         <h1>reaction-map</h1>
-        <input id=query placeholder="type phrase here" type=text>
+        <input id=query placeholder="type phrase here" type=text onkeypress="enterSearch()">
         <button id=search-btn>Generate</button>
         <br><br>
         <input id=check type="checkbox"> <label name=check>Restrict to USA places</label>
         <h3 id=messages></h3>
-        <div id=map style="height:500px;"></div>
+        <div id=map style="height:600px;"></div>
         <div id=instructions>
             <h3>Inspired by xkcd #2260</h3>
             Limitations:
