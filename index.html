@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ReactionMap</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href=style.css>
+        <link rel="icon" type="image/png" href="icon.png">
+        <!--Leaflet imports-->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+    </head>
+    <body>
+        <h1>reaction-map</h1>
+        <input id=query placeholder="type phrase here" type=text>
+        <button id=search-btn>Generate</button>
+        <br><br>
+        <input id=check type="checkbox"> <label name=check>Restrict to USA places</label>
+        <h3 id=messages></h3>
+        <div id=map style="height:500px;"></div>
+        <div id=instructions>
+            <h3>Inspired by xkcd #2260</h3>
+            Limitations:
+            <ul>
+                <li>Words must be typed without punctuation</li>
+                <li>Each individual word must be a place (no two-word place names; you may need to play around with removing spaces)</li>
+                <li>Phoneme matching not yet implemented (leveshstein distance used for matching)</li>
+            </ul>
+        </div>
+        <script src=main.js></script>
+    </body>
+</html>

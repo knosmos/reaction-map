@@ -1,0 +1,43 @@
+html{
+    padding:0;
+    margin:0;
+}
+@font-face{
+    font-family: xkcd;
+    src: url("xkcd.otf");
+}
+body{
+    margin:0;
+    padding:20px 20% 20px 20%;
+    font-family:xkcd;
+}
+input[type=text]{
+    font-family:xkcd;
+    font-size:14pt;
+    padding:10px;
+    box-sizing: border-box;
+    border:none;
+    background-color:whitesmoke;
+    width:75%;
+}
+button{
+    font-family:xkcd;
+    background-color:rgb(211, 211, 211);
+    border:none;
+    border-radius:5px;
+    padding:10px;
+    font-size:14pt;
+    box-sizing: border-box;
+    width:20%;
+    float:right;
+}
+p{
+    font-family: xkcd !important;
+    margin:0px;
+    padding:0px;
+    font-size:12pt;
+    margin-top:-4px;
+}
+span{
+    color:grey;
+}
