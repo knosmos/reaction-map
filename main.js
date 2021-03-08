@@ -1,6 +1,10 @@
 /* Send Requests to Server */
 let server_url = 'https://reactionmap-server.herokuapp.com/?q='
 
+function enterSearch(){
+    if (event.keyCode == 13){search();}
+}
+
 function search(){
     // retrieve query from webpage
     query = document.getElementById("query").value;
