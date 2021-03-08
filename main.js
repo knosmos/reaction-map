@@ -1,5 +1,5 @@
 /* Send Requests to Server */
-let server_url = 'http://127.0.0.1:5000/?q='
+let server_url = 'https://reactionmap-server.herokuapp.com/?q='
 
 function search(){
     // retrieve query from webpage
