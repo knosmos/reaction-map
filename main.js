@@ -74,7 +74,7 @@ function displayMap(points){
     }
     let coords = []
     let dest = points[points.length-1];
-    map.setView([dest["lat","lng"], 3);
+    map.setView([dest["lat"],dest["lng"]], 3);
     for (let i=0; i<points.length; i++){
         p = points[i];
         let icon = dot;
