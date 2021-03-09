@@ -17,6 +17,11 @@ function search(){
     req.send();
 }
 
+// wake-up call to wake up heroku server
+var req = new XMLHttpRequest();
+req.open("GET", server_url);
+req.send();
+
 function handleResponse(){
     let resp = this.responseText;
     let json = JSON.parse(resp);
